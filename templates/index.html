@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Список профессий:</h2>
+    {% if list_  == 'ul'%}
+        <ul>
+        {% for user in user_list%}
+        <li> {{user}}
+        </li>
+            {% endfor %}
+        </ul>
+    {% elif list_  == 'ol' %}
+        <ol>
+        {% for user in user_list %}
+        <li>  {{user}}
+        </li>
+            {% endfor %}
+        </ol>
+    {%else%}
+<h2>Ошибка</h2>
+    {% endif %}
+
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Размещение по каютам</h1>
+    {% set user_list = people%}
+    {% set c = 'Каюта №'%}
+    <dl>
+        {% for user in user_list %}
+        <dd>  {{ user }} - {{c}} {{ loop.index }}{% if loop.first %} - капитан корабля{% endif %}
+        </dd>
+        {% endfor %}
+    </dl>
+
+{% endblock %}

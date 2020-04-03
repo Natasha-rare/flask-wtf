@@ -1,0 +1,41 @@
+{
+  "Members":
+[
+  {
+    "name": "Энди",
+    "surname": "Уир",
+    "work": ["аэрогеолог", "специалист по радиационной защите"],
+    "image": "/static/img/endy.png"
+  },
+  {
+    "name": "Ридли",
+    "surname": "Скотт",
+    "work": ["капитан корабля", "пилот"],
+    "image": "/static/img/ridly.jpg"
+  },
+  {
+    "name": "Марк",
+    "surname": "Уотни",
+    "work": ["врач", "экзобиолог"],
+    "image": "/static/img/mark.jpg"
+  },
+  {
+    "name": "Венката",
+    "surname": "Капур",
+    "work": ["киберинжинер", "инженер по трансформированию"],
+    "image": "/static/img/vencata.jpg"
+  },
+  {
+    "name": "Тедди",
+    "surname": "Сандерс",
+    "work": "штурман, пилот дронов",
+    "image": "/static/img/teddy.jpg"
+  },
+  {
+    "name": "Шон",
+    "surname": "Бин",
+    "work": ["гляциолог", "инжинер жизнеобеспечения"],
+    "image": "/static/img/shon.jpeg"
+  }
+]
+}

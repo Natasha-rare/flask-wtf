@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <style>
+        table {
+      border-collapse: collapse;
+      line-height: 1.1;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+
+    th {
+      padding: 30px;
+      border: 1px solid #A9E2CC;
+      border-collapse: collapse;
+    }
+
+    </style>
+    <h1>Оформление каюты</h1>
+        {% if age < 21%}
+        {%set img = '/static/img/child.png'%}
+        {% if sex == 'female'%}
+                {%set color = '#ff9999'%}
+            {%else%}
+                {%set color = '#9999ff'%}
+            {%endif%}
+    {%else%}
+        {%set img = '/static/img/old.png'%}
+            {% if sex == 'female'%}
+                {%set color = '#ff0000'%}
+            {%else%}
+                {%set color = '#0000ff'%}
+            {%endif%}
+    {%endif%}
+    <table>
+    <tr>
+        <th> Цвет стен </th>
+        <th> Эмблема </th>
+    </tr> <!--ряд с ячейками заголовков-->
+    <tr>
+        <td bgcolor="{{ color }}"> </td>
+        <td><img src={{img}} alt="здесь должна была быть картинка, но не нашлась"></td>
+    </tr> <!--ряд с ячейками тела таблицы-->
+    </table>
+
+
+{% endblock %}

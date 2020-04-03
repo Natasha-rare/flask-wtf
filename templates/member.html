@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+{%set members = member%}
+<h1>{{members['name']}} {{members['surname']}} </h1>
+<img src={{members['image']}} alt="здесь должна была быть картинка, но не нашлась">
+<h5>{{ work }}</h5>
+{% endblock %}
